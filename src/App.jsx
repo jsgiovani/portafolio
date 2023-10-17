@@ -1,8 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faEye, faFile, faMapLocationDot, faMapPin, faPhone, faSquareEnvelope } from '@fortawesome/free-solid-svg-icons'
+import {faEye, faMapPin} from '@fortawesome/free-solid-svg-icons'
 import Header from "./components/Header"
 import image from '/img/giovani.jpeg'; 
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import Footer from './components/Footer';
 
 
 const App = () => {
@@ -127,8 +128,8 @@ const App = () => {
             <h4 className='uppercase text-blue-600 text-xl font-bold'>Portfolio</h4>
             <h2 className='font-semibold text-2xl mb-10'>Each project is a unique piece knowledge, concentration and process of development</h2>
 
-            {/* portafolio-item */}
-            <div className='grid grid-cols-2 gap-10'>
+            {/* portafolio-item 1*/}
+            <div className='grid grid-cols-2 gap-10 mb-24'>
                 <img className='rounded-md'  src="./img/project1.png" alt="image project # 1" />
 
                 <div className='text-center'>
@@ -169,44 +170,96 @@ const App = () => {
 
             </div>
 
+            {/* portafolio-item 2*/}
+            <div className='grid grid-cols-2 gap-10 grid-flow-row-dense mb-24'>
+                <img className='rounded-md col-start-2'  src="./img/project2.png" alt="image project # 1" />
 
+                <div className='text-center col-start-1'>
+                    <h2 className='mb-3 text-xl font-semibold'>Movie App</h2>
+                   <p className='px-20 font-light text-slate-700'>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque dicta non, eum odit repellendus nihil exercitationem eveniet rerum fuga officia, ratione maiores amet commodi velit quos mollitia tenetur architecto sequi!
+                   </p>
+
+                   <div className='flex justify-center mt-5'>
+                        <ul className='flex gap-4'>
+                            <li><p className='border p-1 px-2 rounded-2xl bg-slate-500 font-medium text-white text-md'>HTML</p></li>
+                            <li><p className='border p-1 px-2 rounded-2xl bg-slate-500 font-medium text-white text-md'>CSS</p></li>
+                            <li><p className='border p-1 px-2 rounded-2xl bg-slate-500 font-medium text-white text-md'>Javascript</p></li>
+                        </ul>
+                   </div>
+                    
+
+                   <div className='flex justify-center mt-5'>
+
+                        <ul className='flex gap-8 items-center'>
+                            <li>
+                                <a className='text-xl' href="https://github.com/jsgiovani/barberShop" target="_blank" rel="noopener noreferrer">
+                                    <FontAwesomeIcon icon={faGithub} />
+                                </a>
+                            </li>
+
+                            <li>
+                                <a className='flex gap-1 items-center text-xl' href="https://ornate-mermaid-702ba6.netlify.app/" target="_blank" rel="noopener noreferrer">
+                                    <p className='text-sm'>Live Demo</p>
+                                    <FontAwesomeIcon icon={faEye} />
+                                </a>
+                            </li>
+
+                        </ul>
+                   </div>
+
+                </div>
+
+            </div>
+
+            {/* portafolio-item 3*/}
+            <div className='grid grid-cols-2 gap-10'>
+                <img className='rounded-md'  src="./img/project3.png" alt="image project # 1" />
+
+                <div className='text-center'>
+                    <h2 className='mb-3 text-xl font-semibold'>Movie App</h2>
+                   <p className='px-20 font-light text-slate-700'>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque dicta non, eum odit repellendus nihil exercitationem eveniet rerum fuga officia, ratione maiores amet commodi velit quos mollitia tenetur architecto sequi!
+                   </p>
+
+                   <div className='flex justify-center mt-5'>
+                        <ul className='flex gap-4'>
+                            <li><p className='border p-1 px-2 rounded-2xl bg-slate-500 font-medium text-white text-md'>HTML</p></li>
+                            <li><p className='border p-1 px-2 rounded-2xl bg-slate-500 font-medium text-white text-md'>CSS</p></li>
+                            <li><p className='border p-1 px-2 rounded-2xl bg-slate-500 font-medium text-white text-md'>Javascript</p></li>
+                        </ul>
+                   </div>
+                    
+
+                   <div className='flex justify-center mt-5'>
+
+                        <ul className='flex gap-8 items-center'>
+                            <li>
+                                <a className='text-xl' href="https://github.com/jsgiovani/furnitureStore" target="_blank" rel="noopener noreferrer">
+                                    <FontAwesomeIcon icon={faGithub} />
+                                </a>
+                            </li>
+
+                            <li>
+                                <a className='flex gap-1 items-center text-xl' href="https://glittering-panda-dbff44.netlify.app/" target="_blank" rel="noopener noreferrer">
+                                    <p className='text-sm'>Live Demo</p>
+                                    <FontAwesomeIcon icon={faEye} />
+                                </a>
+                            </li>
+
+                        </ul>
+                   </div>
+
+                </div>
+
+            </div>
 
         </section>
 
-        <footer className='container mx-auto md:px-[6%] 2xl:p-x[12%] my-16'>
-            <h4 className='uppercase text-blue-600 text-xl font-bold'>Contact</h4>
-            <h2 className='font-bold text-4xl mb-16'>Don't be shy! Hit me up!</h2>
+        {/* Footer */}
+        <Footer/>
 
-            <div className='flex gap-16'>
-
-                <div className="contact flex items-center gap-5">
-                    <FontAwesomeIcon className='text-blue-600 text-4xl' icon={faMapLocationDot} />
-                    <div>
-                        <h3 className='font-bold'>Location</h3>
-                        <p className='text-slate-700'>New York, United States</p>
-                    </div>
-                </div>
-
-
-
-                <div className="contact flex items-center gap-5">
-                    <FontAwesomeIcon className='text-blue-600 text-4xl' icon={faSquareEnvelope} />
-                    <div>
-                        <h3 className='font-bold'>Mail</h3>
-                        <p className='text-slate-700'>jsjosgiovani@gmail.com</p>
-                    </div>
-                </div>
-
-                <div className="contact flex items-center gap-5">
-                    <FontAwesomeIcon className='text-blue-600 text-4xl' icon={faPhone} />
-                    <div>
-                        <h3 className='font-bold'>Phone</h3>
-                        <p className='text-slate-700'>917-615-69XX</p>
-                    </div>
-                </div>
-            </div>
-
-        </footer>
+      
     </>
   )
 }
