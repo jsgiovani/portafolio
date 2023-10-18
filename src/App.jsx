@@ -29,7 +29,7 @@ const App = () => {
                         </div>
 
 
-                        <div className="socials flex gap-3 justify-center md:justify-start pb-4 md:pb-0">
+                        <div className="socials flex gap-3 justify-center md:justify-start pb-5 md:pb-0">
                             <a href="https://www.linkedin.com/in/jose-giovani-tzoc-vel%C3%A1squez-173948a4/" target="_blank" rel="noopener noreferrer">
                                 <FontAwesomeIcon className='text-3xl' icon={faLinkedin} />
                             </a>
@@ -61,7 +61,7 @@ const App = () => {
                 <div className="md:flex mt-8 items-center gap-10">
                     <h3 className='pb-3 md:border-r-4 md:pr-8 text-center font-bold'>Tech Stack</h3>
 
-                    <ul className='flex gap-8'>
+                    <ul className='flex gap-8 justify-center md:justify-self-start'>
 
                         <li>
                             <img className='w-8 h-10 object-scale-down' src="./img/html.png" alt="" />
@@ -170,14 +170,14 @@ const App = () => {
 
                         <ul className='flex gap-8 items-center'>
                             <li>
-                                <a className='text-xl flex gap-2 items-center text-violet-700' href="https://github.com/jsgiovani/movie" target="_blank" rel="noopener noreferrer">
+                                <a className='text-xl flex gap-2 items-center text-violet-700' href="https://github.com/jsgiovani/barberShop" target="_blank" rel="noopener noreferrer">
                                     <p className='text-sm font-semibold'>Code</p>
                                     <FontAwesomeIcon icon={faGithub} />
                                 </a>
                             </li>
 
                             <li>
-                                <a className='flex gap-2 items-center text-xl text-violet-700' href="https://jsgiovaniwebsites-movieapp.netlify.app/" target="_blank" rel="noopener noreferrer">
+                                <a className='flex gap-2 items-center text-xl text-violet-700' href="https://jsgiovaniwebsites-barbershop.netlify.app/" target="_blank" rel="noopener noreferrer">
                                     <p className='text-sm font-semibold'>Live Demo</p>
                                     <FontAwesomeIcon className='text-sm' icon={faUpRightFromSquare} />
                                 </a>
@@ -226,14 +226,14 @@ const App = () => {
 
                         <ul className='flex gap-8 items-center'>
                             <li>
-                                <a className='text-xl flex gap-2 items-center text-violet-700' href="https://github.com/jsgiovani/movie" target="_blank" rel="noopener noreferrer">
+                                <a className='text-xl flex gap-2 items-center text-violet-700' href="https://github.com/jsgiovani/furnitureStore" target="_blank" rel="noopener noreferrer">
                                     <p className='text-sm font-semibold'>Code</p>
                                     <FontAwesomeIcon icon={faGithub} />
                                 </a>
                             </li>
 
                             <li>
-                                <a className='flex gap-2 items-center text-xl text-violet-700' href="https://jsgiovaniwebsites-movieapp.netlify.app/" target="_blank" rel="noopener noreferrer">
+                                <a className='flex gap-2 items-center text-xl text-violet-700' href="https://jsgiovaniwebsites-fnstore.netlify.app/" target="_blank" rel="noopener noreferrer">
                                     <p className='text-sm font-semibold'>Live Demo</p>
                                     <FontAwesomeIcon className='text-sm' icon={faUpRightFromSquare} />
                                 </a>
