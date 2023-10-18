@@ -12,23 +12,23 @@ const Footer = () => {
 
             <div className="flex items-center gap-2">
                 <FontAwesomeIcon className='text-violet-700 text-xl' icon={faMapLocationDot} />
-                <p className='text-violet-700'>New York, United States</p>
+                <p className='font-semibold text-sm text-violet-600'>New York, United States</p>
             </div>
 
 
             <a href='mailto:jsjosgiovani@gmail.com' target="_blank" className="flex items-center gap-2">
                 <FontAwesomeIcon className='text-violet-700 text-xl' icon={faSquareEnvelope} />
-                <p className='text-violet-700'>jsjosgiovani@gmail.com</p>
+                <p className='font-semibold text-sm text-violet-600'>jsjosgiovani@gmail.com</p>
             </a>
 
             <a href='tel:+19176156927' target="_blank" className="flex items-center gap-2">
                 <FontAwesomeIcon className='text-violet-700 text-xl' icon={faPhone} />
-                <p className='text-violet-700'>917-615-6927</p>
+                <p className='font-semibold text-sm text-violet-600'>917-615-6927</p>
             </a>
 
             <a href='https://api.whatsapp.com/send?phone=+19176156927&text=Hi Giovani! We are interested to...' target="_blank" className="flex items-center gap-2">
                 <FontAwesomeIcon className='text-violet-700 text-xl' icon={faWhatsapp} />
-                <p className='text-violet-700'>917-615-6927</p>
+                <p className='font-semibold text-sm text-violet-600'>917-615-6927</p>
             </a>
         </div>
 

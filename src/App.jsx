@@ -101,7 +101,7 @@ const App = () => {
             <h4 className='uppercase text-blue-600 text-xl font-bold mb-4'>Portfolio</h4>
 
             {/* portafolio-item 1*/}
-            <div className='grid md:grid-cols-2 items-center gap-16 mb-28'>
+            <div className='flex flex-col-reverse md:grid md:grid-cols-2 items-center gap-16 mb-28'>
 
                 <div className='flex justify-center'>
                     <img className='rounded-md h-64 object-center'  src="./img/project1.png" alt="image project # 1" />
@@ -197,10 +197,10 @@ const App = () => {
 
             
             {/* portafolio-item 3*/}
-            <div className='grid md:grid-cols-2 items-center gap-16 mb-28'>
+            <div className='flex flex-col-reverse md:grid md:grid-cols-2 items-center gap-16 mb-28'>
 
                 <div className='flex justify-center'>
-                    <img className='rounded-md h-64 object-center'  src="./img/project3.png" alt="image project # 1" />
+                    <img className='rounded-md h-64 object-cover'  src="./img/project3.png" alt="image project # 1" />
 
                 </div>
 
