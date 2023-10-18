@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faEye, faMapPin, faUpRightFromSquare} from '@fortawesome/free-solid-svg-icons'
+import {faMapPin, faUpRightFromSquare} from '@fortawesome/free-solid-svg-icons'
 import Header from "./components/Header"
 import image from '/img/giovani.jpeg'; 
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
@@ -24,9 +24,15 @@ const App = () => {
                     <div className="developer-info">
 
                         <div className='mt-8 md:mt-0 text-center md:text-left'>
-                            <h1 className="font-black text-3xl md:text-6xl">Full-Stack Web Developer</h1>
-                            <p className='my-5'>Hi, I am Giovani Velasquez. A passionate Full-Stack Web Developer based in NY, United States of America <span><FontAwesomeIcon className='text-red-600' icon={faMapPin} /></span> </p>
+                            <h1 className='text-3xl font-bold'>
+                                Hi, I am 
+                                <span className='text-violet-600 text-4xl'> Giovani Velasquez</span> 
+                                <span className='block mt-1 text-2xl'>Full-Stack Web Developer.</span>
+                            </h1>
+                            <p className='my-6'>I use Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi consectetur deserunt dolorem ducimus beatae, consequuntur ut minus aliquam accusantium ipsum dolore error magni perspiciatis sunt repellat! Optio eligendi nesciunt beatae.</p>
                         </div>
+
+
 
 
                         <div className="socials flex gap-3 justify-center md:justify-start pb-5 md:pb-0">
@@ -59,9 +65,9 @@ const App = () => {
                 
 
                 <div className="md:flex mt-8 items-center gap-10">
-                    <h3 className='pb-3 md:border-r-4 md:pr-8 text-center font-bold'>Tech Stack</h3>
+                    <h3 className='pb-3 md:border-r-4 md:pr-8 text-center font-bold uppercase'>Best Skill on</h3>
 
-                    <ul className='flex gap-8 justify-center md:justify-self-start'>
+                    <ul className='flex gap-8 justify-center px-[2%] md:p-0 md:justify-self-start'>
 
                         <li>
                             <img className='w-8 h-10 object-scale-down' src="./img/html.png" alt="" />
@@ -82,6 +88,9 @@ const App = () => {
                             <img className='w-8 h-10 object-scale-down' src="./img/php.png" alt="" />
                         </li>
                         <li>
+                            <img className='w-8 h-10 object-scale-down' src="./img/mysql.png" alt="" />
+                        </li>
+                        <li>
                             <img className='w-8 h-10 object-scale-down' src="./img/laravel.png" alt="" />
                         </li>
                     </ul>
@@ -96,9 +105,15 @@ const App = () => {
         </div>
 
 
+        <section className='container mx-auto px-[2%] md:px-[6%] 2xl:p-x[12%] mt-24 md:mt-0'>
+            <h2 className='text-blue-600 text-2xl font-bold mb-4'>About Me</h2>
+
+        </section>
+
+
         {/* PORTFOLIO */}
         <section className="container mx-auto px-[2%] md:px-[6%] 2xl:p-x[12%] mt-24 md:mt-0">
-            <h4 className='uppercase text-blue-600 text-xl font-bold mb-4'>Portfolio</h4>
+            <h4 className='text-blue-600 text-2xl font-bold mb-4'>My Portfolio</h4>
 
             {/* portafolio-item 1*/}
             <div className='flex flex-col-reverse md:grid md:grid-cols-2 items-center gap-4  md:gap-16 mb-28'>

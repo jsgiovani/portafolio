@@ -5,8 +5,8 @@ import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 const Footer = () => {
   return (
     <footer className='container mx-auto px-[2%]  md:px-[6%] 2xl:p-x[12%] my-10'>
-        <h4 className='uppercase text-blue-600 text-xl font-bold mb-2'>Contact</h4>
-        <h2 className='font-bold text-3xl mb-10'>Don't be shy! Hit me up!</h2>
+        <h4 className=' text-blue-600 text-2xl font-bold mb-2'>My Contact</h4>
+        <h2 className='font-bold text-xl mb-10'>Don't be shy! Hit me up!</h2>
 
         <div className='flex flex-col md:flex-row md:items-center gap-5 md:gap-10'>
 
