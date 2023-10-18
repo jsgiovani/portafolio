@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faEye, faMapPin} from '@fortawesome/free-solid-svg-icons'
+import {faEye, faMapPin, faUpRightFromSquare} from '@fortawesome/free-solid-svg-icons'
 import Header from "./components/Header"
 import image from '/img/giovani.jpeg'; 
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
@@ -15,9 +15,9 @@ const App = () => {
         <Header/>
 
         {/* HERO */}
-        <div className='px-4 h-screen relative'>
+        <div className='h-screen relative'>
 
-            <div className="hero md:absolute md:top-1/2 md:-translate-y-1/2 md:left-1/2 md:-translate-x-1/2 md:w-3/4">
+            <div className="md:absolute md:top-1/2 md:-translate-y-1/2 md:left-1/2 md:-translate-x-1/2 md:w-3/4">
 
 
                 <div className="grid md:grid-cols-2 md:gap-2">
@@ -96,54 +96,31 @@ const App = () => {
         </div>
 
 
-        <hr />
-
-        {/* ABOUT */}
-        <section   className='container mx-auto grid md:grid-cols-2 gap-10 md:px-[6%] 2xl:p-x[12%] h-screen items-center'>
-           
-
-            <img className='rounded-md' src="./img/about.jpg" alt="img about" />
-
-            <div className='about-info text-center'>
-
-                <h3 className='uppercase text-blue-600 text-xl font-bold'>About me</h3>
-                <h2 className='font-semibold text-3xl my-4'>A dedicated Full-Stack Web Developer roudmap</h2>
-                <p className='font-light md:px-12 text-slate-700'>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, voluptatem. Velit deserunt aliquam nemo impedit, repudiandae aperiam similique eius earum eum, iure sit mollitia amet suscipit ipsum in quos! Voluptates!
-                    At quisquam quasi, dolorem possimus explicabo facilis vitae praesentium.
-                </p>
-
-                <p className='font-light md:px-12 text-slate-700 mt-3'>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, voluptatem. Velit deserunt aliquam nemo impedit, repudiandae aperiam similique eius earum eum, iure sit mollitia amet suscipit ipsum in quos! Voluptates!
-                    At quisquam quasi, dolorem possimus explicabo facilis vitae praesentium.
-                </p>
-
-
-            </div>
-
-        </section>
-
-
         {/* PORTFOLIO */}
-        <section className="container mx-auto md:px-[6%] 2xl:p-x[12%] mt-24 md:mt-0">
-            <h4 className='uppercase text-blue-600 text-xl font-bold'>Portfolio</h4>
-            <h2 className='font-semibold md:text-2xl mb-10 text-xl'>Each project is a unique piece knowledge, concentration and process of development</h2>
+        <section className="container mx-auto px-[2%] md:px-[6%] 2xl:p-x[12%] mt-24 md:mt-0">
+            <h4 className='uppercase text-blue-600 text-xl font-bold mb-4'>Portfolio</h4>
 
             {/* portafolio-item 1*/}
-            <div className='grid md:grid-cols-2 gap-10 mb-24'>
-                <img className='rounded-md'  src="./img/project1.png" alt="image project # 1" />
+            <div className='grid md:grid-cols-2 items-center gap-16 mb-28'>
 
-                <div className='text-center'>
-                    <h2 className='mb-3 text-xl font-semibold'>Movie App</h2>
-                   <p className='md:px-20 font-light text-slate-700'>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque dicta non, eum odit repellendus nihil exercitationem eveniet rerum fuga officia, ratione maiores amet commodi velit quos mollitia tenetur architecto sequi!
+                <div className='flex justify-center'>
+                    <img className='rounded-md h-64 object-center'  src="./img/project1.png" alt="image project # 1" />
+
+                </div>
+
+
+
+                <div className='text-justify md:text-center'>
+                    <h2 className='mb-3 text-3xl font-semibold text-center'>Movie App</h2>
+                   <p className='text-slate-700'>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque dicta non, eum odit repellendus nihil exercitationem eveniet rerum fuga officia, ratione maiores amet commodi velit quos mollitiastt s
                    </p>
 
                    <div className='flex justify-center mt-5'>
-                        <ul className='flex gap-4'>
-                            <li><p className='border p-1 px-2 rounded-2xl bg-slate-500 font-medium text-white text-md'>HTML</p></li>
-                            <li><p className='border p-1 px-2 rounded-2xl bg-slate-500 font-medium text-white text-md'>CSS</p></li>
-                            <li><p className='border p-1 px-2 rounded-2xl bg-slate-500 font-medium text-white text-md'>Javascript</p></li>
+                        <ul className='flex gap-3'>
+                            <li className='p-1 px-3 rounded-2xl bg-sky-600 font-semibold text-white text-sm'>HTML</li>
+                            <li className='p-1 px-3 rounded-2xl bg-sky-600 font-semibold text-white text-sm'>CSS</li>
+                            <li className='p-1 px-3 rounded-2xl bg-sky-600 font-semibold text-white text-sm'>JavaScript</li>
                         </ul>
                    </div>
                     
@@ -152,15 +129,16 @@ const App = () => {
 
                         <ul className='flex gap-8 items-center'>
                             <li>
-                                <a className='text-xl' href="https://github.com/jsgiovani/movie" target="_blank" rel="noopener noreferrer">
+                                <a className='text-xl flex gap-2 items-center text-violet-700' href="https://github.com/jsgiovani/movie" target="_blank" rel="noopener noreferrer">
+                                    <p className='text-sm font-semibold'>Code</p>
                                     <FontAwesomeIcon icon={faGithub} />
                                 </a>
                             </li>
 
                             <li>
-                                <a className='flex gap-1 items-center text-xl' href="https://jsgiovaniwebsites-movieapp.netlify.app/" target="_blank" rel="noopener noreferrer">
-                                    <p className='text-sm'>Live Demo</p>
-                                    <FontAwesomeIcon icon={faEye} />
+                                <a className='flex gap-2 items-center text-xl text-violet-700' href="https://jsgiovaniwebsites-movieapp.netlify.app/" target="_blank" rel="noopener noreferrer">
+                                    <p className='text-sm font-semibold'>Live Demo</p>
+                                    <FontAwesomeIcon className='text-sm' icon={faUpRightFromSquare} />
                                 </a>
                             </li>
 
@@ -172,20 +150,18 @@ const App = () => {
             </div>
 
             {/* portafolio-item 2*/}
-            <div className='grid md:grid-cols-2 gap-10 md:grid-flow-row-dense mb-24'>
-                <img className='rounded-md md:col-start-2'  src="./img/project2.png" alt="image project # 1" />
-
-                <div className='text-center md:col-start-1'>
-                    <h2 className='mb-3 text-xl font-semibold'>Barber Shop</h2>
-                   <p className='md:px-20 font-light text-slate-700'>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque dicta non, eum odit repellendus nihil exercitationem eveniet rerum fuga officia, ratione maiores amet commodi velit quos mollitia tenetur architecto sequi!
+            <div className='grid md:grid-cols-2 items-center gap-16 mb-28'>
+                <div className='text-justify md:text-center'>
+                    <h2 className='mb-3 text-3xl font-semibold text-center'>Barber Shop</h2>
+                   <p className='text-slate-700'>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque dicta non, eum odit repellendus nihil exercitationem eveniet rerum fuga officia, ratione maiores amet commodi velit quos mollitiastt s
                    </p>
 
                    <div className='flex justify-center mt-5'>
-                        <ul className='flex gap-4'>
-                            <li><p className='border p-1 px-2 rounded-2xl bg-slate-500 font-medium text-white text-md'>HTML</p></li>
-                            <li><p className='border p-1 px-2 rounded-2xl bg-slate-500 font-medium text-white text-md'>CSS</p></li>
-                            <li><p className='border p-1 px-2 rounded-2xl bg-slate-500 font-medium text-white text-md'>Javascript</p></li>
+                        <ul className='flex gap-3'>
+                            <li className='p-1 px-3 rounded-2xl bg-sky-600 font-semibold text-white text-sm'>HTML</li>
+                            <li className='p-1 px-3 rounded-2xl bg-sky-600 font-semibold text-white text-sm'>CSS</li>
+                            <li className='p-1 px-3 rounded-2xl bg-sky-600 font-semibold text-white text-sm'>React</li>
                         </ul>
                    </div>
                     
@@ -194,15 +170,16 @@ const App = () => {
 
                         <ul className='flex gap-8 items-center'>
                             <li>
-                                <a className='text-xl' href="https://github.com/jsgiovani/barberShop" target="_blank" rel="noopener noreferrer">
+                                <a className='text-xl flex gap-2 items-center text-violet-700' href="https://github.com/jsgiovani/movie" target="_blank" rel="noopener noreferrer">
+                                    <p className='text-sm font-semibold'>Code</p>
                                     <FontAwesomeIcon icon={faGithub} />
                                 </a>
                             </li>
 
                             <li>
-                                <a className='flex gap-1 items-center text-xl' href="https://jsgiovaniwebsites-barbershop.netlify.app/" target="_blank" rel="noopener noreferrer">
-                                    <p className='text-sm'>Live Demo</p>
-                                    <FontAwesomeIcon icon={faEye} />
+                                <a className='flex gap-2 items-center text-xl text-violet-700' href="https://jsgiovaniwebsites-movieapp.netlify.app/" target="_blank" rel="noopener noreferrer">
+                                    <p className='text-sm font-semibold'>Live Demo</p>
+                                    <FontAwesomeIcon className='text-sm' icon={faUpRightFromSquare} />
                                 </a>
                             </li>
 
@@ -211,23 +188,36 @@ const App = () => {
 
                 </div>
 
+                <div className='flex justify-center'>
+                    <img className='rounded-md h-64 object-center'  src="./img/project2.png" alt="image project # 1" />
+                </div>
             </div>
 
+
+
+            
             {/* portafolio-item 3*/}
-            <div className='grid md:grid-cols-2 gap-10'>
-                <img className='rounded-md'  src="./img/project3.png" alt="image project # 1" />
+            <div className='grid md:grid-cols-2 items-center gap-16 mb-28'>
 
-                <div className='text-center'>
-                    <h2 className='mb-3 text-xl font-semibold'>Movie App</h2>
-                   <p className='md:px-20 font-light text-slate-700'>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque dicta non, eum odit repellendus nihil exercitationem eveniet rerum fuga officia, ratione maiores amet commodi velit quos mollitia tenetur architecto sequi!
+                <div className='flex justify-center'>
+                    <img className='rounded-md h-64 object-center'  src="./img/project3.png" alt="image project # 1" />
+
+                </div>
+
+
+
+                <div className='text-justify md:text-center'>
+                    <h2 className='mb-3 text-3xl font-semibold text-center'>Furniture Store</h2>
+                   <p className='text-slate-700'>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque dicta non, eum odit repellendus nihil exercitationem eveniet rerum fuga officia, ratione maiores amet commodi velit quos mollitiastt s
                    </p>
 
                    <div className='flex justify-center mt-5'>
-                        <ul className='flex gap-4'>
-                            <li><p className='border p-1 px-2 rounded-2xl bg-slate-500 font-medium text-white text-md'>HTML</p></li>
-                            <li><p className='border p-1 px-2 rounded-2xl bg-slate-500 font-medium text-white text-md'>CSS</p></li>
-                            <li><p className='border p-1 px-2 rounded-2xl bg-slate-500 font-medium text-white text-md'>Javascript</p></li>
+                        <ul className='flex gap-3'>
+                            <li className='p-1 px-3 rounded-2xl bg-sky-600 font-semibold text-white text-sm'>HTML</li>
+                            <li className='p-1 px-3 rounded-2xl bg-sky-600 font-semibold text-white text-sm'>CSS</li>
+                            <li className='p-1 px-3 rounded-2xl bg-sky-600 font-semibold text-white text-sm'>React</li>
+                            <li className='p-1 px-3 rounded-2xl bg-sky-600 font-semibold text-white text-sm'>Laravel</li>
                         </ul>
                    </div>
                     
@@ -236,15 +226,16 @@ const App = () => {
 
                         <ul className='flex gap-8 items-center'>
                             <li>
-                                <a className='text-xl' href="https://github.com/jsgiovani/furnitureStore" target="_blank" rel="noopener noreferrer">
+                                <a className='text-xl flex gap-2 items-center text-violet-700' href="https://github.com/jsgiovani/movie" target="_blank" rel="noopener noreferrer">
+                                    <p className='text-sm font-semibold'>Code</p>
                                     <FontAwesomeIcon icon={faGithub} />
                                 </a>
                             </li>
 
                             <li>
-                                <a className='flex gap-1 items-center text-xl' href="https://jsgiovaniwebsites-ftstore.netlify.app/" target="_blank" rel="noopener noreferrer">
-                                    <p className='text-sm'>Live Demo</p>
-                                    <FontAwesomeIcon icon={faEye} />
+                                <a className='flex gap-2 items-center text-xl text-violet-700' href="https://jsgiovaniwebsites-movieapp.netlify.app/" target="_blank" rel="noopener noreferrer">
+                                    <p className='text-sm font-semibold'>Live Demo</p>
+                                    <FontAwesomeIcon className='text-sm' icon={faUpRightFromSquare} />
                                 </a>
                             </li>
 
@@ -255,6 +246,7 @@ const App = () => {
 
             </div>
 
+        
         </section>
 
         {/* Footer */}
