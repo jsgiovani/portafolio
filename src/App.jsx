@@ -233,7 +233,7 @@ const App = () => {
                             </li>
 
                             <li>
-                                <a className='flex gap-2 items-center text-xl text-violet-700' href="https://jsgiovaniwebsites-fnstore.netlify.app/" target="_blank" rel="noopener noreferrer">
+                                <a className='flex gap-2 items-center text-xl text-violet-700' href="https://jsgiovaniwebsites-ftstore.netlify.app/" target="_blank" rel="noopener noreferrer">
                                     <p className='text-sm font-semibold'>Live Demo</p>
                                     <FontAwesomeIcon className='text-sm' icon={faUpRightFromSquare} />
                                 </a>
