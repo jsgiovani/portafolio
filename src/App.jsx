@@ -20,14 +20,14 @@ const App = () => {
             <div className="md:absolute md:top-1/2 md:-translate-y-1/2 md:left-1/2 md:-translate-x-1/2 md:w-3/4">
 
 
-                <div className="grid md:grid-cols-2 md:gap-2">
+                <div className="grid md:grid-cols-2 md:gap-2  items-center">
                     <div className="developer-info">
 
                         <div className='mt-8 md:mt-0 text-center md:text-left'>
                             <h1 className='text-3xl font-bold'>
                                 Hi, I am 
                                 <span className='text-violet-600 text-4xl'> Giovani Velasquez</span> 
-                                <span className='block mt-1 text-2xl'>Full-Stack Web Developer.</span>
+                                <span className='block mt-2 text-3xl text-violet-500'>Full-Stack Web Developer.</span>
                             </h1>
                             <p className='my-6'>I use Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi consectetur deserunt dolorem ducimus beatae, consequuntur ut minus aliquam accusantium ipsum dolore error magni perspiciatis sunt repellat! Optio eligendi nesciunt beatae.</p>
                         </div>
@@ -35,7 +35,7 @@ const App = () => {
 
 
 
-                        <div className="socials flex gap-3 justify-center md:justify-start pb-5 md:pb-0">
+                        <div className="socials flex gap-3 justify-center items-center md:justify-start pb-5 md:pb-0">
                             <a href="https://www.linkedin.com/in/jose-giovani-tzoc-vel%C3%A1squez-173948a4/" target="_blank" rel="noopener noreferrer">
                                 <FontAwesomeIcon className='text-3xl' icon={faLinkedin} />
                             </a>
@@ -45,7 +45,7 @@ const App = () => {
                                 <FontAwesomeIcon className='text-3xl' icon={faGithub} />
                             </a>
                             
-                            <a className='font-medium text-md border rounded-lg px-2 bg-black text-white overflow-hidden'href="./img/php.png" download target="_blank" rel="noopener noreferrer">
+                            <a className='p-1 px-3 rounded-2xl bg-black font-semibold text-white text-sm'href="./img/php.png" download target="_blank" rel="noopener noreferrer">
                                 Resume
                             </a>
 
@@ -107,6 +107,45 @@ const App = () => {
 
         <section className='container mx-auto px-[2%] md:px-[6%] 2xl:p-x[12%] mt-24 md:mt-0'>
             <h2 className='text-blue-600 text-2xl font-bold mb-4'>About Me</h2>
+
+            <div className="grid md:grid-cols-4 gap-8 items-center pb-10">
+                <img className='hidden md:inline-grid md:col-span-1 rounded-3xl shadow-md' src="./img/giovani.jpeg" alt="imagen giovani" />
+                <div className='md:col-span-3 shadow-md h-full rounded-2xl p-6 flex flex-col justify-center items-start'>
+                    <h2 className='text-4xl font-semibold mb-2'>Giovani Velasquez</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt adipisci numquam iusto, corporis et esse porro illum ullam incidunt, quisquam natus minus dolores tenetur explicabo aliquam, ratione doloribus eaque ab?</p>
+                </div>
+
+                <div className='md:col-span-2 shadow-md h-full rounded-2xl p-6'>
+                    <h3 className='text-xl font-semibold mb-4'>Experience</h3>
+                    <ul>
+                        <li className='mb-3'>
+                            <p>2020 - 2021</p>
+                            <p className='text-violet-500'>Junior Web Developer</p>
+                            <p>Digital Investments.</p>
+                        </li>
+
+                        <li>
+                            <p>2021 - Current</p>
+                            <p className='text-violet-500'>HR Specialist</p>
+                            <p>Hivolts Electrical Inc.</p>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div className='md:col-span-2 shadow-md h-full rounded-2xl p-6'>
+                    <h3 className='text-xl font-semibold mb-4'>Education</h3>
+                    <ul>
+                        <li className='mb-3'>
+                            <p>2013 - 2017</p>
+                            <p className='text-violet-500'>Computer Science and Information Technology.</p>
+                            <p className=''>Del Valle University</p>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
 
         </section>
 

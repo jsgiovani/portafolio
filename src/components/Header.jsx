@@ -9,7 +9,6 @@ const Header = () => {
 
       <a className='font-semibold flex gap-2 items-center' href="/">
           <img src="./img/giovani.jpeg" className='w-10 rounded-full border-2' alt="img giovani" />
-        <h1 className='uppercase font-semibold text-sm'>Giovani</h1>
       </a>
 
       <nav className='flex gap-3' >
