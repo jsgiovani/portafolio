@@ -24,10 +24,10 @@ const App = () => {
                     <div className="developer-info">
 
                         <div className='mt-8 md:mt-0 text-center md:text-left'>
-                            <h1 className='text-3xl font-bold'>
+                            <h1 className='text-xl md:text-3xl font-bold'>
                                 Hi, I am 
-                                <span className='text-violet-600 text-4xl'> Giovani Velasquez</span> 
-                                <span className='block mt-2 text-3xl text-violet-500'>Full-Stack Web Developer.</span>
+                                <span className='text-violet-600 text-3xl md:text-4xl'> Giovani Velasquez</span> 
+                                <span className='block md:mt-2 text-2xl md:text-3xl text-violet-500'>Full-Stack Web Developer.</span>
                             </h1>
                             <p className='my-6'>I use Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi consectetur deserunt dolorem ducimus beatae, consequuntur ut minus aliquam accusantium ipsum dolore error magni perspiciatis sunt repellat! Optio eligendi nesciunt beatae.</p>
                         </div>
@@ -106,16 +106,16 @@ const App = () => {
 
 
         <section className='container mx-auto px-[2%] md:px-[6%] 2xl:p-x[12%] mt-24 md:mt-0'>
-            <h2 className='text-blue-600 text-2xl font-bold mb-4'>About Me</h2>
+            <h2 className='text-blue-600 text-2xl font-bold mb-5'>About Me</h2>
 
             <div className="grid md:grid-cols-4 gap-8 items-center pb-10">
                 <img className='hidden md:inline-grid md:col-span-1 rounded-3xl shadow-md' src="./img/giovani.jpeg" alt="imagen giovani" />
-                <div className='md:col-span-3 shadow-md h-full rounded-2xl p-6 flex flex-col justify-center items-start'>
-                    <h2 className='text-4xl font-semibold mb-2'>Giovani Velasquez</h2>
+                <div className='md:col-span-3 shadow-md h-full rounded-2xl p-4 md:p-6 flex flex-col justify-center items-start'>
+                    <h2 className='text-xl md:text-4xl font-semibold mb-2'>Giovani Velasquez</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt adipisci numquam iusto, corporis et esse porro illum ullam incidunt, quisquam natus minus dolores tenetur explicabo aliquam, ratione doloribus eaque ab?</p>
                 </div>
 
-                <div className='md:col-span-2 shadow-md h-full rounded-2xl p-6'>
+                <div className='md:col-span-2 shadow-md h-full rounded-2xl p-4 md:p-6'>
                     <h3 className='text-xl font-semibold mb-4'>Experience</h3>
                     <ul>
                         <li className='mb-3'>
@@ -133,7 +133,7 @@ const App = () => {
                     </ul>
                 </div>
 
-                <div className='md:col-span-2 shadow-md h-full rounded-2xl p-6'>
+                <div className='md:col-span-2 shadow-md h-full rounded-2xl p-4 md:p-6'>
                     <h3 className='text-xl font-semibold mb-4'>Education</h3>
                     <ul>
                         <li className='mb-3'>
