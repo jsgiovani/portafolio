@@ -27,9 +27,9 @@ const App = () => {
                             <h1 className='text-xl md:text-3xl font-bold'>
                                 Hi, I am 
                                 <span className='text-slade-700 text-3xl md:text-4xl'> Giovani Velasquez</span> 
-                                <span className='block md:mt-2 text-2xl md:text-3xl text-slade-700'>Full-Stack Web Developer.</span>
+                                <span className='block md:mt-2 text-2xl md:text-3xl text-slade-700'>Junior Full-Stack Web Developer.</span>
                             </h1>
-                            <p className='my-6'>I am a passionate Full-Stack Web Developer based in NY, United States of America <span><FontAwesomeIcon className='text-red-600' icon={faMapPin} /></span></p>
+                            <p className='my-6'>I am a passionate Junior Full-Stack Web Developer based in NY, United States of America <span><FontAwesomeIcon className='text-red-600' icon={faMapPin} /></span></p>
                         </div>
 
 
@@ -115,7 +115,7 @@ const App = () => {
                 <div className='md:col-span-3 shadow-md h-full rounded-2xl p-4 md:p-6 flex flex-col justify-center items-start'>
                     <h2 className='text-xl md:text-4xl font-semibold mb-2'>Giovani Velasquez</h2>
                     <p className='text-justify'>
-                        I am a well-qualified self-taught Full Stack Web Developer with more than two years developing real world projects from the front-end and back-end side. Proficient expectations in most used programming languages as HTML, CSS, JavaScript, PHP and MySQL to develop and/or integrate new features to run business operations. In order to speed up results, I use React library as my client side and Laravel Framework as my server side.                     
+                        I am a well-qualified self-taught Junior Full Stack Web Developer with more than two years developing real world projects from the front-end and back-end side. Proficient expectations in most used programming languages as HTML, CSS, JavaScript, PHP and MySQL to develop and/or integrate new features to run business operations. In order to speed up results, I use React library as my client side and Laravel Framework as my server side.                     
                     </p>
                 </div>
 
