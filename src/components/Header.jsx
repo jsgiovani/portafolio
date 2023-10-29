@@ -12,9 +12,9 @@ const Header = () => {
       </a>
 
       <nav className='flex gap-3' >
-        <a className='hover:text-sky-600' href="about">About</a>
-        <a className='hover:text-sky-600' href="#">Projects</a>
-        <a className='hover:text-sky-600' href="#">Contact</a>
+        <a className='hover:text-sky-600' href="#about">About</a>
+        <a className='hover:text-sky-600' href="#projects">Projects</a>
+        <a className='hover:text-sky-600' href="#contact">Contact</a>
       </nav>
 
     </header>

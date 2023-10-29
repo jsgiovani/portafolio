@@ -26,10 +26,10 @@ const App = () => {
                         <div className='mt-8 md:mt-0 text-center md:text-left'>
                             <h1 className='text-xl md:text-3xl font-bold'>
                                 Hi, I am 
-                                <span className='text-violet-600 text-3xl md:text-4xl'> Giovani Velasquez</span> 
-                                <span className='block md:mt-2 text-2xl md:text-3xl text-violet-500'>Full-Stack Web Developer.</span>
+                                <span className='text-slade-700 text-3xl md:text-4xl'> Giovani Velasquez</span> 
+                                <span className='block md:mt-2 text-2xl md:text-3xl text-slade-700'>Full-Stack Web Developer.</span>
                             </h1>
-                            <p className='my-6'>I use Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi consectetur deserunt dolorem ducimus beatae, consequuntur ut minus aliquam accusantium ipsum dolore error magni perspiciatis sunt repellat! Optio eligendi nesciunt beatae.</p>
+                            <p className='my-6'>I am a passionate Full-Stack Web Developer based in NY, United States of America <span><FontAwesomeIcon className='text-red-600' icon={faMapPin} /></span></p>
                         </div>
 
 
@@ -105,14 +105,18 @@ const App = () => {
         </div>
 
 
-        <section className='container mx-auto px-[2%] md:px-[6%] 2xl:p-x[12%] mt-24 md:mt-0'>
+
+        {/* ABOUT */}
+        <section id='#about' className='container mx-auto px-[2%] md:px-[6%] 2xl:p-x[12%] mt-24 md:mt-0'>
             <h2 className='text-blue-600 text-2xl font-bold mb-5'>About Me</h2>
 
             <div className="grid md:grid-cols-4 gap-8 items-center pb-10">
                 <img className='hidden md:inline-grid md:col-span-1 rounded-3xl shadow-md' src="./img/giovani.jpeg" alt="imagen giovani" />
                 <div className='md:col-span-3 shadow-md h-full rounded-2xl p-4 md:p-6 flex flex-col justify-center items-start'>
                     <h2 className='text-xl md:text-4xl font-semibold mb-2'>Giovani Velasquez</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt adipisci numquam iusto, corporis et esse porro illum ullam incidunt, quisquam natus minus dolores tenetur explicabo aliquam, ratione doloribus eaque ab?</p>
+                    <p className='text-justify'>
+                        I am a well-qualified self-taught Full Stack Web Developer with more than two years developing real world projects from the front-end and back-end side. Proficient expectations in most used programming languages as HTML, CSS, JavaScript, PHP and MySQL to develop and/or integrate new features to run business operations. In order to speed up results, I use React library as my client side and Laravel Framework as my server side.                     
+                    </p>
                 </div>
 
                 <div className='md:col-span-2 shadow-md h-full rounded-2xl p-4 md:p-6'>
@@ -139,7 +143,7 @@ const App = () => {
                         <li className='mb-3'>
                             <p>2013 - 2017</p>
                             <p className='text-violet-500'>Computer Science and Information Technology.</p>
-                            <p className=''>Del Valle University</p>
+                            <p className=''>Valle University</p>
                         </li>
 
                     </ul>
@@ -155,7 +159,7 @@ const App = () => {
             <h4 className='text-blue-600 text-2xl font-bold mb-4'>My Portfolio</h4>
 
             {/* portafolio-item 1*/}
-            <div className='flex flex-col-reverse md:grid md:grid-cols-2 items-center gap-4  md:gap-16 mb-28'>
+            <div className='flex flex-col-reverse md:grid md:grid-cols-2 items-center gap-4  md:gap-16 mb-16'>
 
                 <div className='flex justify-center'>
                     <img className='rounded-md h-64 object-center'  src="./img/project1.png" alt="image project # 1" />
@@ -165,9 +169,9 @@ const App = () => {
 
 
                 <div className='text-justify md:text-center'>
-                    <h2 className='mb-3 text-3xl font-semibold text-center'>Movie App</h2>
+                    <h2 className='mb-3 text-3xl font-semibold text-center'>MovieTracker</h2>
                    <p className='text-slate-700'>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque dicta non, eum odit repellendus nihil exercitationem eveniet rerum fuga officia, ratione maiores amet commodi velit quos mollitiastt s
+                        MovieTracker is an online platform that allows people to show and search the most popular and upcoming  movies and TV Shows of the moment.
                    </p>
 
                    <div className='flex justify-center mt-5'>
@@ -175,6 +179,7 @@ const App = () => {
                             <li className='p-1 px-3 rounded-2xl bg-sky-600 font-semibold text-white text-sm'>HTML</li>
                             <li className='p-1 px-3 rounded-2xl bg-sky-600 font-semibold text-white text-sm'>CSS</li>
                             <li className='p-1 px-3 rounded-2xl bg-sky-600 font-semibold text-white text-sm'>JavaScript</li>
+                            <li className='p-1 px-3 rounded-2xl bg-sky-600 font-semibold text-white text-sm'>Fetch API</li>
                         </ul>
                    </div>
                     
@@ -204,11 +209,11 @@ const App = () => {
             </div>
 
             {/* portafolio-item 2*/}
-            <div className='grid md:grid-cols-2 items-center gap-4  md:gap-16 mb-28'>
+            <div className='grid md:grid-cols-2 items-center gap-4  md:gap-16 mb-16'>
                 <div className='text-justify md:text-center'>
                     <h2 className='mb-3 text-3xl font-semibold text-center'>Barber Shop</h2>
                    <p className='text-slate-700'>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque dicta non, eum odit repellendus nihil exercitationem eveniet rerum fuga officia, ratione maiores amet commodi velit quos mollitiastt s
+                        Barber Shop is an online website that allows people to show the business owner what is his/her busines about, background, price, services, location, contact information and worktime. 
                    </p>
 
                    <div className='flex justify-center mt-5'>
@@ -251,7 +256,7 @@ const App = () => {
 
             
             {/* portafolio-item 3*/}
-            <div className='flex flex-col-reverse md:grid md:grid-cols-2 items-center gap-4  md:gap-16 mb-28'>
+            <div className='flex flex-col-reverse md:grid md:grid-cols-2 items-center gap-4  md:gap-16 mb-16'>
 
                 <div className='flex justify-center'>
                     <img className='rounded-md h-64 object-cover'  src="./img/project3.png" alt="image project # 1" />
@@ -263,7 +268,7 @@ const App = () => {
                 <div className='text-justify md:text-center'>
                     <h2 className='mb-3 text-3xl font-semibold text-center'>Furniture Store</h2>
                    <p className='text-slate-700'>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque dicta non, eum odit repellendus nihil exercitationem eveniet rerum fuga officia, ratione maiores amet commodi velit quos mollitiastt s
+                        Furniture Store is an online e-Commerce web application that helps the owner business to show and automatize all his/her products to potential customers, also allows to create a cart list, search products and finally allows customers to buy products in the web application.
                    </p>
 
                    <div className='flex justify-center mt-5'>
