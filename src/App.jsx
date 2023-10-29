@@ -45,7 +45,7 @@ const App = () => {
                                 <FontAwesomeIcon className='text-3xl' icon={faGithub} />
                             </a>
                             
-                            <a className='p-1 px-3 rounded-2xl bg-black font-semibold text-white text-sm'href="./img/php.png" download target="_blank" rel="noopener noreferrer">
+                            <a className='p-1 px-3 rounded-2xl bg-black font-semibold text-white text-sm'href="./assets/cv.pdf" download target="_blank" rel="noopener noreferrer">
                                 Resume
                             </a>
 
@@ -286,7 +286,14 @@ const App = () => {
                         <ul className='flex gap-8 items-center'>
                             <li>
                                 <a className='text-xl flex gap-2 items-center text-violet-700' href="https://github.com/jsgiovani/furnitureStore" target="_blank" rel="noopener noreferrer">
-                                    <p className='text-sm font-semibold'>Code</p>
+                                    <p className='text-sm font-semibold'>Code(React)</p>
+                                    <FontAwesomeIcon icon={faGithub} />
+                                </a>
+                            </li>
+
+                            <li>
+                                <a className='text-xl flex gap-2 items-center text-violet-700' href="https://github.com/jsgiovani/furnitureStore-server" target="_blank" rel="noopener noreferrer">
+                                    <p className='text-sm font-semibold'>Code(Laravel)</p>
                                     <FontAwesomeIcon icon={faGithub} />
                                 </a>
                             </li>
