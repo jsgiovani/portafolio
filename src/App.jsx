@@ -315,7 +315,7 @@ const App = () => {
             <div className='flex flex-col-reverse md:grid md:grid-cols-2 items-center gap-4  md:gap-16 mb-16'>
 
                 <div className='flex justify-center'>
-                    <img className='rounded-md h-64 object-cover'  src="./img/project3.png" alt="image project # 1" />
+                    <img className='rounded-md h-64 object-cover'  src="./img/project4.png" alt="image project # 4" />
 
                 </div>
 
