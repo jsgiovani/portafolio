@@ -312,6 +312,62 @@ const App = () => {
 
             </div>
 
+            <div className='flex flex-col-reverse md:grid md:grid-cols-2 items-center gap-4  md:gap-16 mb-16'>
+
+                <div className='flex justify-center'>
+                    <img className='rounded-md h-64 object-cover'  src="./img/project3.png" alt="image project # 1" />
+
+                </div>
+
+
+
+                <div className='text-justify md:text-center'>
+                    <h2 className='mb-3 text-3xl font-semibold text-center'>Real Estate Marketplace</h2>
+                   <p className='text-slate-700'>
+                        Real Estate allows you find easily your dream home. Also allows owners to post their available house, apartament, etc to be rented as soon as possible 
+                   </p>
+
+                   <div className='flex justify-center mt-5'>
+                        <ul className='flex gap-3'>
+                            <li className='p-1 px-3 rounded-2xl bg-sky-600 font-semibold text-white text-sm'>React</li>
+                            <li className='p-1 px-3 rounded-2xl bg-sky-600 font-semibold text-white text-sm'>MongoDB</li>
+                            <li className='p-1 px-3 rounded-2xl bg-sky-600 font-semibold text-white text-sm'>Express.js</li>
+                            <li className='p-1 px-3 rounded-2xl bg-sky-600 font-semibold text-white text-sm'>Node.js</li>
+                        </ul>
+                   </div>
+                    
+
+                   <div className='flex justify-center mt-5'>
+
+                        <ul className='flex gap-8 items-center'>
+                            <li>
+                                <a className='text-xl flex gap-2 items-center text-violet-700' href="https://github.com/jsgiovani/mern-estate.git" target="_blank" rel="noopener noreferrer">
+                                    <p className='text-sm font-semibold'>Code(React)</p>
+                                    <FontAwesomeIcon icon={faGithub} />
+                                </a>
+                            </li>
+
+                            <li>
+                                <a className='text-xl flex gap-2 items-center text-violet-700' href="https://github.com/jsgiovani/api-estate.git" target="_blank" rel="noopener noreferrer">
+                                    <p className='text-sm font-semibold'>Code(Node.js)</p>
+                                    <FontAwesomeIcon icon={faGithub} />
+                                </a>
+                            </li>
+
+                            <li>
+                                <a className='flex gap-2 items-center text-xl text-violet-700' href="https://jsgiovanisites-mern-realestate.netlify.app/" target="_blank" rel="noopener noreferrer">
+                                    <p className='text-sm font-semibold'>Live Demo</p>
+                                    <FontAwesomeIcon className='text-sm' icon={faUpRightFromSquare} />
+                                </a>
+                            </li>
+
+                        </ul>
+                   </div>
+
+                </div>
+
+            </div>
+
         
         </section>
 
